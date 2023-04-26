@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "id": "dragonwings",
+  "version": "${version}",
+  "name": "DragonWings",
+  "description": "Copies the wings from the enderdragon and renders them client side on the players back.",
+  "authors": [
+    "PandaDEV"
+  ],
+  "website": "https://pandadev.tk",
+  "contact": {
+    "repo": "https://github.com/0pandadev/DragonWings",
+    "website": "https://pandadev.tk"
+  },
+  "license": "MIT",
+  "icon": "assets/DragonWings/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "tk.pandadev.dragonwings.DragonWingsClient"
+    ],
+    "main": [
+      "tk.pandadev.dragonwings.DragonWings"
+    ],
+    "fabric-datagen": [
+      "tk.pandadev.dragonwings.DataGen"
+    ]
+  },
+  "mixins": [
+    "DragonWings.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
