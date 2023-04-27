@@ -7,23 +7,20 @@
   "authors": [
     "PandaDEV"
   ],
-  "website": "https://pandadev.tk",
   "contact": {
-    "repo": "https://github.com/0pandadev/DragonWings",
-    "website": "https://pandadev.tk"
+    "sources": "https://github.com/0pandadev/DragonWings",
+    "issues": "https://github.com/0pandadev/DragonWings/issues",
+    "homepage": "https://pandadev.tk"
   },
   "license": "MIT",
   "icon": "assets/DragonWings/icon.png",
-  "environment": "*",
+  "environment": "client",
   "entrypoints": {
     "client": [
-      "tk.pandadev.dragonwings.DragonWingsClient"
+      "tk.pandadev.dragonwings.DragonWings"
     ],
     "main": [
       "tk.pandadev.dragonwings.DragonWings"
-    ],
-    "fabric-datagen": [
-      "tk.pandadev.dragonwings.DataGen"
     ]
   },
   "mixins": [
